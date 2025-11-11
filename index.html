@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>VORION Motors</title>
+</head>
+<body>
+  <section class="hero" id="hero">
+    <!-- Vídeo de fundo: sem áudio, autoplay, loop, playsinline (importante em iOS) -->
+    <video
+      class="hero__video"
+      id="bgVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="img/poster.jpg"
+      aria-hidden="true"
+    >
+      <!-- Primeiro o webm para navegadores que preferem webm, depois mp4 como fallback -->
+      <source src="videos/media.webm">
+      <source src="videos/media.mp4">
+      <!-- Mensagem para navegadores muito antigos -->
+      Seu navegador não suporta vídeo de fundo — use uma imagem de fallback.
+    </video>
+
+    <div class="hero__overlay" aria-hidden="true" id="inicio"></div>
+
+    <div class="hero__content">
+            <ul>
+              <li>
+                <a href=""><span     
+                class="material-symbols-outlined">
+                menu
+                </span>Menu</a>
+              </li>
+              <li>
+                  <a href=""><img src="img/logo-1.png" width="70px" height="60px" class="lg"></a>
+              </li>
+              <li>
+                  <a href="">
+                    <span class="material-symbols-outlined">
+                      search
+                    </span>
+                  </a>
+              </li>
+            </ul>
+      <div class="container">
+          <div class="cont">
+              <h1>Vorion Motors</h1>
+              <p>Você não dirige o VORION. Ele sente com você</p>
+              <a class="btn" href="#explore">Explorar</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="explore">
+      <div class="modelo-principal">
+          <div class="logo">
+              <img src="img/logo-2.png">
+          </div>
+          <div class="presc-logo">
+              <h2>INOVAÇÃO, INTELIGÊNCIA E EMOÇÃO EM MOVIMENTO</h2>
+                 <p>Na VORION Motors, transformamos tecnologia em arte.
+                  Cada veículo é projetado para aprender e evoluir com o condutor,  uma fusão perfeita entre engenharia de ponta, e inteligência artificial para interpretação humana.
+                  Mais do que carros, criamos extensões das suas ideias.</p>
+                  <aside>VORION Motors — A emoção conduz o futuro.</aside>
+          </div>
+      </div>
+      <h2 class="cabecalho">Lançamentos Previstos até 2026</h2>
+      <div class="flex-cars">
+          <div class="car" id="principal" style="--clr: #195855;">
+            <div class="img">
+               <img src="img/vorion_x1_no_text.png">
+            </div>
+            <img src="img/vorion_x1-carro-teste.png"  class="c3d" width="475px" height="600px">
+            <h2 class="description">Vorion X1</h2>
+          </div>
+          <div class="car" style="--clr: #111010;">
+              <div class="img">
+                <img src="img/vorion_aura_no_text.png">
+              </div>
+              <img src="img/vorion_aura-carro-teste (1).png" class="c3d" width="475px" height="600px">
+              <h2 class="description">Vorion Aura</h2>
+          </div>
+          <div class="car" style="--clr: #1669ad;">
+              <div class="img">
+                <img src="img/vorion_edge_suv_no_text.png">
+              </div>
+              <img src="img/vorion_edge-carro-teste.png" class="c3d" width="475px" height="600px">
+              <h2 class="description">Vorion Edge</h2>
+          </div>
+          <div class="car" style="--clr: #454349;">
+              <div class="img">
+                <img src="img/vorion_nova_no_text.png">
+              </div>
+              <img src="img/vorion_nova-carro-teste.png" class="c3d" width="475px" height="600px">
+              <h2 class="description">Vorion Nova</h2>
+          </div>
+      </div>
+  </section>
+
+  <section class="final">
+      <div class="preco-final-cars">
+          <div class="cards">
+              <img src="img/vorion_x1-carro-teste.png" class="cars-final" width="300px" height="300px">
+    
+              <div class="alinhamento">
+                  <h2 class="modelo">Vorion X-1</h2>
+                  <div class="stats-car">
+                    <p><span class="material-symbols-outlined">
+                    empty_dashboard
+                    </span>720 CV</p>
+                    <p><span class="material-symbols-outlined">
+                      local_gas_station
+                    </span>Motor quântico híbrido</p>
+                    <p><span class="material-symbols-outlined">
+                    auto_transmission
+                    </span>Automático</p>
+                  </div>
+                  <div class="preco">
+                    <h3>Preço Sugerido</h3>
+                    <p class="preco-carro">US$ 700.000</p>
+                  </div>
+                  <div class="especi-car">
+                    <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Desempenho extremo</p>
+                    <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>IA: Helix OS v3.0</p>
+                    <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Design aerodinâmico</p>
+                  </div>
+                  <button>Ir para Showroom Online</button>
+              </div>
+
+          </div>
+
+          <div class="cards">
+            <img src="img/vorion_aura-carro-teste (1).png" class="cars-final" width="300px" height="300px">
+            
+            <div class="alinhamento">
+              <h2 class="modelo">Vorion Aura</h2>
+              <div class="stats-car">
+                  <p><span class="material-symbols-outlined">
+                    empty_dashboard
+                  </span>600 CV</p>
+                  <p><span class="material-symbols-outlined">
+                    electric_car
+                  </span>Motor biturbo</p>
+                  <p><span class="material-symbols-outlined">
+                    auto_transmission
+                    </span>Automático</p>
+              </div>
+              <div class="preco">
+                  <h3>Preço Sugerido</h3>
+                  <p class="preco-carro">US$ 600.000</p>
+              </div>
+              <div class="especi-car">
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Tecnologia sensorial</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Elegância Inteligente</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Projeção holográfica</p>
+              </div>
+              <button>Ir para Showroom Online</button>
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="img/vorion_edge-carro-teste.png" class="cars-final" width="300px" height="300px">
+          
+            <div class="alinhamento">
+              <h2 class="modelo">Vorion Edge Suv</h2>
+              <div class="stats-car">
+                  <p><span class="material-symbols-outlined">
+                    empty_dashboard
+                  </span>520 CV</p>
+                  <p><span class="material-symbols-outlined">
+                    local_gas_station
+                  </span>Gasolina/Híbrido</p>
+                  <p><span class="material-symbols-outlined">
+                    auto_transmission
+                    </span>Automático</p>
+              </div>
+
+              <div class="preco">
+                  <h3>Preço Sugerido</h3>
+                  <p class="preco-carro">US$ 500.000</p>
+              </div>
+
+              <div class="especi-car">
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Sistema de condução avançada</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Projeção holográfica</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Segurança total</p>
+              </div>
+              <button>Ir para Showroom Online</button>
+            </div>
+          </div>
+
+          <div class="cards">
+        
+            <img src="img/vorion_nova-carro-teste.png" class="cars-final" width="300px" height="300px">
+
+            <div class="alinhamento">
+              <h2 class="modelo">Vorion Nova</h2>
+              <div class="stats-car">
+                  <p>
+                    <span class="material-symbols-outlined">
+                      empty_dashboard
+                    </span>
+                    450 CV
+                  </p>
+                  <p>
+                    <span class="material-symbols-outlined">
+                    electric_car
+                    </span>
+                    Triplo motor elétrico
+                  </p>
+                  <p>
+                    <span class="material-symbols-outlined">
+                    auto_transmission
+                    </span>
+                    Automático
+                  </p>
+              </div>
+
+              <div class="preco">
+                  <h3>Preço Sugerido</h3>
+                  <p class="preco-carro">US$ 360.000</p>
+              </div>
+
+              <div class="especi-car">
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Custo-benefício</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Projeção holográfica</p>
+                <p><span class="material-symbols-outlined">
+                      check_small
+                    </span>Custo de manutenção reduzido</p>
+              </div>
+              <button>Ir para Showroom Online</button>
+            </div>
+          </div>
+      </div>
+      <div class="grid-desc-carros">
+        <div class="parte-tec">
+            <h3>Ficha Técnica Vorion X-1</h3>
+            <p>Montadora: Vorion Motors AG</p>
+            <p>Local de Fabricação: Zurique, Suiça</p>
+            <p>Motor: V10 híbrido de 720 cavalos a 9.000 rpm e 72 kgfm de torque a 7.500 rpm</p>
+            <p>Transmissão: Automática de 10 marchas com dupla embreagem</p>
+            <p>Aceleração de 0 a 100 KM/H: 2,9 segundos</p>
+            <p>Velocidade Máxima: 355 km/h</p>
+            <p>Peso: 1.480 kg</p>
+            <p>Material Estrutural: Fibra de carbono e alumínio aeroespacial</p>
+        </div>
+        <div class="parte-tec">
+            <h3>Ficha Técnica Vorion Aura</h3>
+            <p>Montadora: Vorion Motors AG</p>
+            <p>Local de Fabricação: Zurique, Suiça</p>
+            <p>Motor: V8 biturbo de 600 cavalos a 8.200 rpm e 65 kgfm de torque a 6.500 rpm</p>
+            <p>Transmissão: Automática de 9 marchas com sistema inteligente de tração integral</p>
+            <p>Aceleração de 0 a 100 KM/H: 3,4 segundos</p>
+            <p>Velocidade Máxima: 330 km/h</p>
+            <p>Peso: 1.720 kg</p>
+            <p>Material Estrutural: Alumínio reforçado e fibra composta</p>
+        </div>
+        <div class="parte-tec">
+            <h3>Ficha Técnica Vorion Edge</h3>
+            <p>Montadora: Vorion Motors AG</p>
+            <p>Local de Fabricação: São Paulo, Brasil - planta de testes</p>
+            <p>Motor: Sistema híbrido V6 + motor elétrico duplo com 520 cavalos combinados</p>
+            <p>Transmissão: Automática de 8 marchas com tração integral</p>
+            <p>Aceleração de 0 a 100 KM/H: 4,1 segundos</p>
+            <p>Velocidade Máxima: 290 km/h</p>
+            <p>Peso: 1.980 kg</p>
+            <p>Material Estrutural: Aço leve e fibra de carbono nas portas e capô</p>
+        </div>
+        <div class="parte-tec">
+            <h3>Ficha Técnica Vorion Nova</h3>
+            <p>Montadora: Vorion Motors AG</p>
+            <p>Local de Fabricação: São Paulo, Brasil</p>
+            <p>Motor: Triplo motor elétrico de 450 cavalos e 85 kgfm de torque instantâneo</p>
+            <p>Transmissão: Automática elétrica direta com sistema de regeneração ativa</p>
+            <p>Aceleração de 0 a 100 KM/H: 3,7 segundos</p>
+            <p>Velocidade Máxima: 270 km/h</p>
+            <p>Peso: 1.620 kg</p>
+            <p>Material Estrutural: Fibra de carbono leve e painéis em alumínio reciclável</p>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="btn-voltar">
+      <a href="#inicio"><span class="material-symbols-outlined">
+        keyboard_arrow_up
+      </span>Voltar ao topo</a>
+    </div>
+    <div class="grid-footer">
+        <div class="col">
+          <div class="tit">
+            <h3>Modelos Preferidos</h3>
+          </div>
+          <div class="cont">
+            <p>Vorion X-1</p>
+            <p>Vorion Edge SUV</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tit">
+            <h3>Comprar um veículo</h3>
+          </div>
+          <div class="cont">
+            <p>Encontre veículos novos</p>
+            <p>Configurador de preços</p>
+            <p>Showroom Online</p>
+            <p>Clientes Corporativos</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tit">
+            <h3>Guia de Compra</h3>
+          </div>
+          <div class="cont">
+            <p>Agende um test-drive</p>
+            <p>Procure um concessionário</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tit">
+            <h3>Proprietários</h3>
+          </div>
+          <div class="cont">
+            <p>Agendamento online</p>
+            <p>Contratos de manutenção</p>
+            <p>Assistência em caso de danos</p>
+            <p>Manuais do Proprietário</p>
+            <p>Garantia</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tit">
+            <h3>Tecnologia</h3>
+          </div>
+          <div class="cont">
+            <p>Eletromobilidade</p>
+            <p>Sistemas de segurança avançados</p>
+            <p>Design & carros - conceito</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tit">
+            <h3>Descubra mais sobre a Vorion</h3>
+          </div>
+          <div class="cont" id="cont-editado">
+            <p>Sobre nós</p>
+            <p>Suporte e Contato</p>
+            <p>Política de privacidade</p>
+          </div>
+        </div>
+    </div>
+    <div class="grid-redes-sociais">
+      <div class="icons">
+          <div><img src="./img/icon-facebook.png"></div>
+          <div><img src="./img/icon-instagram.png"></div>
+          <div><img src="./img/icon-youtube.png"></div>
+          <div><img src="./img/icon-linkedin.png"></div>
+      </div>
+      <div class="empresa">
+          <h3>VORION Motors</h3>
+      </div>
+      <div class="direitos">
+          &copy; 2025. Vorion Motors AG - Vorion Brazil
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

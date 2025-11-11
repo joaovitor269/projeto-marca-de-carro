@@ -1,0 +1,648 @@
+@charset "UTF-8";
+
+/* Reset básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+}
+    
+
+body {
+    background-color: #122525;
+}
+
+/* Container da página */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ocupa a viewport inteira */
+    /*overflow: hidden;*/
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Vídeo como fundo */
+.hero__video {
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cobre toda a área, mantendo proporção */
+    z-index: 0;
+    pointer-events: none; /* evita interação */
+    filter: brightness(0.7) saturate(1.10); /* ajuste estético */
+}
+
+/* Sobreposição (opcional) */
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Conteúdo em cima do vídeo */
+.hero__content {
+    position: relative; /* acima do vídeo e overlay */
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero__content > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+ul > li {
+    font-size: 1.6em;
+}
+
+ul > li > a {
+    color: white;
+    margin: 0px 120px 0px 120px;
+}
+
+ul > li > a > .material-symbols-outlined {
+    transform: translateY(5px);
+    margin: 0px 5px 0px 5px;
+    font-size: 1.1em;
+}
+
+ul li img.lg {
+    transform: translate(-20px, -9px);
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0px auto;
+    background-color: #1f1a1a18;
+    border-radius: 10px;
+    max-width: 550px;
+}
+
+.cont {
+    text-align: center;
+}
+
+.container > .cont > h1 {
+    font-size: 3.5em;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 5px 0px;
+    font-family: "Mozilla Headline", sans-serif;
+    font-weight: bold;
+}
+
+.container > .cont > p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .80rem 3.1rem;
+    background: rgba(255,255,255,0.12);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    font-weight: bold;
+}
+
+/* Fallback: quando vídeo não for usado (ex: mobile) */
+.hero--no-video {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Galeria Carros */
+
+.galeria > .modelo-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 80px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modelo-principal > .logo {
+    background-color: rgb(76, 88, 76);
+    height: 430px;
+    /*flex: 0 1 450px;*/
+    width: 420px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.modelo-principal > .presc-logo {
+    margin-right: 10px;
+    background: linear-gradient(to bottom, #201f1f, #c4bcbc);
+    height: 450px;
+    /*flex: 0 1 740px;*/
+    width: 670px;
+    color: white;
+    padding: 20px 10px 10px 30px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 10px rgba(53, 154, 167, 0.363);
+}
+
+.modelo-principal > .presc-logo > h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.modelo-principal > .presc-logo > p {
+    font-size: 1.2em;
+    margin-bottom: 75px;
+    text-align: justify;
+}
+
+.modelo-principal > .presc-logo > aside {
+    font-size: 1em;
+}
+
+.modelo-principal > .logo > img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+h2.cabecalho {
+    color: white;
+    font-size: 2.3em;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 70px;
+    padding-left: 30px;
+    border-left: 15px solid rgba(0, 217, 255, 0.616);
+    margin-left: 5px;
+}
+
+section.galeria > div.flex-cars {
+    position: relative;
+    display: flex;
+    margin: 50px auto;
+    flex-flow: row wrap;
+    gap: 60px;
+    max-width: 1200px;
+    justify-content: center;
+    border: 0.1px solid rgba(255, 255, 255, 0.425);
+    background-image: linear-gradient(to bottom, #ffffff00, #d8cece6e, #161a1a);
+    padding: 50px 0px;
+    border-radius: 5px;
+}
+
+.galeria > .flex-cars > .car {
+    position: relative;
+    width: 470px; /*420px*/
+    height: 590px; /*600px*/
+    cursor: pointer;
+}
+
+.galeria > .flex-cars > .car > .img {
+    position: absolute;
+    inset: 0;
+    box-shadow: 2px 2px 5px black;
+    background: linear-gradient(to bottom, #9b8e8e, rgb(129, 179, 236));
+    border-radius: 20px;
+}
+
+.car > .img > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria > .flex-cars > .car:hover > .img > img {
+    opacity: 0;
+}
+
+.flex-cars > .car > .c3d {
+    position: absolute;
+    z-index: 1000;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.flex-cars > .car:hover > .c3d {
+    opacity: 1;
+    transform: translateY(-15%);
+}
+
+.flex-cars > .car > h2.description {
+    position: absolute;
+    bottom: 20px;
+    left: 65%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.3em;
+    font-weight: 600;
+    background: var(--clr);
+    font-family: "Roboto Mono", monospace;
+    width: 80%;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.flex-cars > .car:hover > h2.description {
+    bottom: 50px;
+    opacity: 1;
+}
+
+/* Section Final preço dos Carros tipo Mercedes */
+
+section.final {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.final > .preco-final-cars {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    background-color: #ebe6e6;
+    margin: 30px auto;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.final > .preco-final-cars > .cards {
+    margin: 40px 0px 20px 0px;
+    border: 1px solid rgba(95, 89, 89, 0.226);
+    width: 420px;
+    height: 550px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cards > img.cars-final {
+    transform: translateY(-130px);
+}
+
+.cards > .alinhamento {
+    background-color: #ffffff00;
+    width: 100%;
+    position: relative;
+    bottom: 240px;
+    height: auto;
+    margin: 30px 0px 20px 0px;
+}
+
+h2.modelo {
+    font-size: 2.3em;
+    color: rgb(65, 62, 62);
+    font-family: "Mozilla Headline", sans-serif;
+    margin: 0px 0px 30px 0px;
+}
+
+.cards > .alinhamento > .stats-car {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 0px 30px 0px;
+}
+
+.cards > .alinhamento > .stats-car > p {
+    font-size: 1em;
+    color: rgb(51, 47, 47);
+    font-weight: 600;
+}
+
+.cards > .alinhamento > .stats-car > p > span.material-symbols-outlined {
+    transform: translateY(3px);
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+
+.cards > .alinhamento > .preco {
+    background-color: rgba(211, 211, 211, 0.76);
+    text-align: left;
+    padding: 10px 0px 10px 20px;
+    margin: 0px 10px 35px 10px;
+    border-radius: 10px;
+} 
+
+.cards > .alinhamento > .preco > h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: rgb(65, 56, 56);
+}
+
+.cards > .alinhamento > .preco > p.preco-carro {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+}
+
+.cards > .alinhamento > .especi-car {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin: 0px 0px 40px 10px;
+    color: rgb(54, 47, 47);
+    font-weight: 620;
+}
+
+.cards > .alinhamento > .especi-car > p {
+    background-color: lightgray;
+    padding: 0px 5px 9px 5px;
+    border-radius: 10px;
+}
+
+.especi-car > p > span.material-symbols-outlined {
+    font-size: 1.5em;
+    transform: translateY(7px);
+}
+
+.cards > .alinhamento > button {
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 15px;
+    color: #08aca3;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.cards > .alinhamento > button:hover {
+    background-color: #b5cab0a6;
+}
+
+/* Descrição dos Carros */
+
+.grid-desc-carros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin: 60px 40px 60px 40px;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.grid-desc-carros > .parte-tec {
+    text-align: center;
+    background-color: rgb(80, 76, 76);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.grid-desc-carros > .parte-tec > h3 {
+    font-size: 1.3em;
+    color: #1679bb;
+    margin-bottom: 12px;
+}
+
+.grid-desc-carros > .parte-tec > p {
+    text-align: left;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 12px;
+    padding-left: 15px;
+}
+
+/* Footer */
+
+footer {
+    margin: 60px 0px 0px 0px;
+    background-color: #2c2929;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer > .btn-voltar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer > .btn-voltar > a {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #50a0d6;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+footer > .btn-voltar > a:hover {
+    background-color: #d7ece49a;
+}
+
+footer > .btn-voltar > a > span.material-symbols-outlined {
+    margin: 0 auto;
+    display: block;
+}
+
+footer > div.grid-footer {
+    margin: 50px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    color: white;
+}
+
+footer > div.grid-footer > .col {
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+footer > div.grid-footer > .col > .tit > h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer > div.grid-footer > .col > .tit {
+    margin-bottom: 25px;
+}
+
+footer > div.grid-footer > .col > .cont > p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer > div.grid-footer > .col > .cont > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer > div.grid-footer > .col > #cont-editado {
+    transform: translateY(-23px);
+}
+
+div.grid-redes-sociais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 23px);
+    gap: 15px;
+    margin: 0px 70px 10px 70px;
+    color: white;
+}
+
+div.grid-redes-sociais > .icons {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+div.grid-redes-sociais > .icons > div {
+    height: 29px;
+    width: 29px;
+    margin-right: 12px;
+}
+
+div.grid-redes-sociais > .icons > div > img {
+    height: 29px;
+    cursor: pointer;
+}
+
+div.grid-redes-sociais > .icons > div:hover {
+    background-color: rgb(250, 228, 228);
+    border-radius: 5px;
+    padding: 3px;
+    transform: translate(-5px, -7px);
+}
+
+div.grid-redes-sociais > .empresa {
+    text-align: right;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+div.grid-redes-sociais > .empresa > h3 {
+    font-size: 1.2em;
+    font-weight: 650;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+div.grid-redes-sociais > .direitos {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+}
+
+div.grid-redes-sociais > .direitos:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Pequenas melhorias de responsividade */
+@media (max-width: 768px) {
+    .hero { height: 90vh; }/* menos alto em telas pequenas */
+
+    /* Parte inicial na frente do video e menu*/
+    .container {
+        margin: 40px auto 0px auto;
+        max-width: 450px;
+        height: 270px;
+    }
+
+    .container > .cont > h1 {
+        font-size: 2.3em;
+    }
+
+    .container > .cont > p {
+        font-size: 1.1em;
+    }
+
+    ul > li > a {
+        margin: 0px 60px 0px 60px;
+    }
+
+    /* Sobre a marca */
+
+    .galeria > .modelo-principal {
+        margin: 50px auto;
+    }
+
+    .modelo-principal > .logo {
+        width: 360px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .modelo-principal > .presc-logo {
+        padding: 20px;
+        width: 470px;
+        height: 450px;
+        margin: 0 auto;
+    }
+
+    .modelo-principal > .presc-logo > h2 {
+        font-size: 1.5em;
+    }
+
+    .modelo-principal > .presc-logo > p {
+        font-size: 1em;
+    }
+
+     .modelo-principal > .presc-logo > aside {
+        font-size: 0.9em;
+     }
+
+    .grid-desc-carros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer > div.grid-footer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    footer > div.grid-footer > .col > .tit {
+        margin-bottom: 20px;
+    }
+
+    footer > div.grid-footer > .col {
+        margin-bottom: 15px;
+    }
+
+    footer > div.grid-footer > .col > #cont-editado {
+        transform: translateY(0px);
+    } 
+
+    div.grid-redes-sociais {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
