@@ -568,7 +568,7 @@ div.grid-redes-sociais > .direitos:hover {
 
 /* Pequenas melhorias de responsividade */
 @media (max-width: 768px) {
-    .hero { height: 90vh; }/* menos alto em telas pequenas */
+    .hero { height: 85vh; }/* menos alto em telas pequenas */
 
     /* Parte inicial na frente do video e menu*/
     .container {
