@@ -305,7 +305,7 @@ section.final {
     margin: 40px 0px 20px 0px;
     border: 1px solid rgba(95, 89, 89, 0.226);
     width: 420px;
-    height: 550px;
+    height: 600px;
     padding: 10px;
     text-align: center;
 }
@@ -318,7 +318,7 @@ section.final {
     background-color: #ffffff00;
     width: 100%;
     position: relative;
-    bottom: 240px;
+    bottom: 220px;
     height: auto;
     margin: 30px 0px 20px 0px;
 }
@@ -354,7 +354,7 @@ h2.modelo {
     background-color: rgba(211, 211, 211, 0.76);
     text-align: left;
     padding: 10px 0px 10px 20px;
-    margin: 0px 10px 35px 10px;
+    margin: 0px 10px 30px 10px;
     border-radius: 10px;
 } 
 
@@ -374,7 +374,7 @@ h2.modelo {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-    margin: 0px 0px 40px 10px;
+    margin: 0px 0px 35px 10px;
     color: rgb(54, 47, 47);
     font-weight: 620;
 }
