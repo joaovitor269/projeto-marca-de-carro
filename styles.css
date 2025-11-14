@@ -138,8 +138,7 @@ ul li img.lg {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    max-width: 1200px;
+    width: 85vw;
     background-color: rgb(0, 0, 0);
     padding: 20px;
     margin: 80px auto;
@@ -152,12 +151,10 @@ ul li img.lg {
     height: 430px;
     /*flex: 0 1 450px;*/
     width: 420px;
-    margin-left: 10px;
     border-radius: 10px;
 }
 
 .modelo-principal > .presc-logo {
-    margin-right: 10px;
     background: linear-gradient(to bottom, #201f1f, #c4bcbc);
     height: 450px;
     /*flex: 0 1 740px;*/
@@ -207,7 +204,7 @@ section.galeria > div.flex-cars {
     margin: 50px auto;
     flex-flow: row wrap;
     gap: 60px;
-    max-width: 1200px;
+    width: 85vw;
     justify-content: center;
     border: 0.1px solid rgba(255, 255, 255, 0.425);
     background-image: linear-gradient(to bottom, #ffffff00, #d8cece6e, #161a1a);
@@ -293,7 +290,7 @@ section.final {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    width: 85vw;
     background-color: #ebe6e6;
     margin: 30px auto;
     gap: 30px;
@@ -411,17 +408,19 @@ h2.modelo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    margin: 60px 40px 60px 40px;
+    margin: 60px auto;
     justify-content: center;
     align-content: center;
     gap: 15px;
+    width: 88vw;
 }
 
 .grid-desc-carros > .parte-tec {
     text-align: center;
-    background-color: rgb(80, 76, 76);
+    background-color: rgb(54, 48, 48);
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.671);
 }
 
 .grid-desc-carros > .parte-tec > h3 {
