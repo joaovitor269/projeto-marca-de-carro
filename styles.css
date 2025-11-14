@@ -302,7 +302,7 @@ section.final {
     margin: 40px 0px 20px 0px;
     border: 1px solid rgba(95, 89, 89, 0.226);
     width: 420px;
-    height: 620px;
+    height: 640px;
     padding: 10px;
     text-align: center;
 }
@@ -592,6 +592,7 @@ div.grid-redes-sociais > .direitos:hover {
 
     .galeria > .modelo-principal {
         margin: 50px auto;
+        width: 95vw;
     }
 
     .modelo-principal > .logo {
@@ -619,8 +620,17 @@ div.grid-redes-sociais > .direitos:hover {
         font-size: 0.9em;
      }
 
+     section.galeria > div.flex-cars {
+        width: 95vw;
+     }
+
+     .final > .preco-final-cars {
+        width: 95vw;
+     }
+
     .grid-desc-carros {
         grid-template-columns: repeat(1, 1fr);
+        width: 95vw;
     }
 
     footer > div.grid-footer {
