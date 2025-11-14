@@ -14,7 +14,7 @@
     
 
 body {
-    background-color: #122525;
+    background-color: #161616;
 }
 
 /* Container da página */
@@ -226,7 +226,7 @@ section.galeria > div.flex-cars {
     position: absolute;
     inset: 0;
     box-shadow: 2px 2px 5px black;
-    background: linear-gradient(to bottom, #9b8e8e, rgb(129, 179, 236));
+    background: linear-gradient(to top, #d6d2d2, rgb(129, 179, 236));
     border-radius: 20px;
 }
 
@@ -305,13 +305,13 @@ section.final {
     margin: 40px 0px 20px 0px;
     border: 1px solid rgba(95, 89, 89, 0.226);
     width: 420px;
-    height: 600px;
+    height: 620px;
     padding: 10px;
     text-align: center;
 }
 
 .cards > img.cars-final {
-    transform: translateY(-130px);
+    transform: translateY(-140px);
 }
 
 .cards > .alinhamento {
@@ -320,14 +320,14 @@ section.final {
     position: relative;
     bottom: 220px;
     height: auto;
-    margin: 30px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 h2.modelo {
     font-size: 2.3em;
     color: rgb(65, 62, 62);
     font-family: "Mozilla Headline", sans-serif;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 32px 0px;
 }
 
 .cards > .alinhamento > .stats-car {
@@ -335,7 +335,7 @@ h2.modelo {
     flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 35px 0px;
 }
 
 .cards > .alinhamento > .stats-car > p {
@@ -354,7 +354,7 @@ h2.modelo {
     background-color: rgba(211, 211, 211, 0.76);
     text-align: left;
     padding: 10px 0px 10px 20px;
-    margin: 0px 10px 30px 10px;
+    margin: 0px 10px 35px 10px;
     border-radius: 10px;
 } 
 
@@ -442,7 +442,7 @@ h2.modelo {
 
 footer {
     margin: 60px 0px 0px 0px;
-    background-color: #2c2929;
+    background-color: #4d4b4b;
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
