@@ -630,7 +630,7 @@ div.grid-redes-sociais > .direitos:hover {
 
     .grid-desc-carros {
         grid-template-columns: repeat(1, 1fr);
-        width: 95vw;
+        width: 85vw;
     }
 
     footer > div.grid-footer {
